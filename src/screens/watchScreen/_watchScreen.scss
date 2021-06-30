@@ -1,0 +1,48 @@
+@import '../../_base.scss';
+
+.watchScreen__player {
+    height: 60vh;
+    background-color: #353946;
+    width: 100%;
+    margin-bottom: 2rem;
+ }
+
+ .watchScreen__comments{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    border-bottom: 1px solid rgb(36, 35, 35);
+    // border: 2px solid red;
+
+    p{
+        font-weight: 500px;
+        color: white;
+        margin-top: 12px;
+        // border: 2px solid green;
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 8px;
+        color: rgb(235, 228, 228);
+        // border: 2px solid blue;
+
+    }
+
+    &:hover {
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out;
+        transform: scaleY(1.1);
+    }
+ }
+
+
+ @media (max-width: $breakpoint-small){
+     .watchScreen__player {
+         height: 35vh;
+     }
+ }
+ 
