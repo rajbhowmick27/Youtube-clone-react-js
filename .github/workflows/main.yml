@@ -21,7 +21,7 @@ jobs:
             node-version: '12'
 
       - name : install node packages
-        run: npm i
+        run: npm install
 
       - name: Build
         run: npm run build
